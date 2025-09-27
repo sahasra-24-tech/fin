@@ -73,24 +73,46 @@ body {
   margin-bottom: 30px;
 }
 
-.cta {
+/* CTA Button Group */
+.cta-group {
   margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta {
   padding: 14px 30px;
   font-size: 1.1em;
   border: none;
   border-radius: 30px;
-  background: #ffdd00;
-  color: #000;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s ease;
 }
 
-.cta:hover {
-  background: #fff;
+/* Customer Button */
+.cta.customer {
+  background: #ffdd00;
   color: #000;
+}
+
+.cta.customer:hover {
+  background: #fff;
   transform: scale(1.1);
 }
+
+/* Service Provider Button */
+.cta.provider {
+  background: #0077b6;
+  color: #fff;
+}
+
+.cta.provider:hover {
+  background: #00b4d8;
+  transform: scale(1.1);
+}
+
 
 /* Modal (Both Login & Signup) */
 .modal {
