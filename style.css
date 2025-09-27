@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #111; /* Dark navbar */
+  background: #111;
   padding: 15px 30px;
   color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
@@ -55,7 +55,7 @@ body {
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: #000; /* Black */
+  background: #000;
   color: white;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .hero h1 span {
-  color: #ffdd00; /* Yellow highlight */
+  color: #ffdd00;
 }
 
 .hero p {
@@ -92,7 +92,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Modal (Login Form) */
+/* Modal (Both Login & Signup) */
 .modal {
   display: none;
   position: fixed;
@@ -104,7 +104,7 @@ body {
 }
 
 .modal-content {
-  background: #111; /* Dark modal */
+  background: #111;
   color: #fff;
   width: 320px;
   margin: 10% auto;
@@ -168,3 +168,4 @@ body {
   from { transform: translateY(-50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+

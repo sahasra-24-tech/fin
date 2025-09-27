@@ -1,21 +1,35 @@
 // Get elements
 const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
 const loginModal = document.getElementById("loginModal");
-const closeBtn = document.querySelector(".close");
+const signupModal = document.getElementById("signupModal");
+const closeBtns = document.querySelectorAll(".close");
 
-// Show modal
+// Show login modal
 loginBtn.onclick = () => {
   loginModal.style.display = "block";
 };
 
-// Close modal
-closeBtn.onclick = () => {
-  loginModal.style.display = "none";
+// Show signup modal
+signupBtn.onclick = () => {
+  signupModal.style.display = "block";
 };
+
+// Close modals when clicking X
+closeBtns.forEach(btn => {
+  btn.onclick = () => {
+    loginModal.style.display = "none";
+    signupModal.style.display = "none";
+  };
+});
 
 // Close when clicking outside modal
 window.onclick = (event) => {
   if (event.target === loginModal) {
     loginModal.style.display = "none";
   }
+  if (event.target === signupModal) {
+    signupModal.style.display = "none";
+  }
 };
+
