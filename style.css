@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #FFEAEA; /* Black background */
+  background: #B9375D; /* Black background */
   color: #fff; /* White text */
 }
 
@@ -55,7 +55,7 @@ body {
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: #000;
+  background: #F5FAE1;
   color: white;
 }
 
