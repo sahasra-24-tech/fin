@@ -1,37 +1,76 @@
-// Get elements
-const loginBtn = document.getElementById("loginBtn");
-const signupBtn = document.getElementById("signupBtn");
-const loginModal = document.getElementById("loginModal");
-const signupModal = document.getElementById("signupModal");
+// Elements
+const customerBtn = document.getElementById("customerBtn");
+const providerBtn = document.getElementById("providerBtn");
+const customerModal = document.getElementById("customerModal");
 const closeBtns = document.querySelectorAll(".close");
 
-// Show login modal
-loginBtn.onclick = () => {
-  loginModal.style.display = "block";
+// Tabs
+const loginTab = document.getElementById("loginTab");
+const signupTab = document.getElementById("signupTab");
+const loginForm = document.getElementById("loginForm");
+const signupForm = document.getElementById("signupForm");
+
+// Navbar buttons
+const loginBtn = document.getElementById("loginBtn");
+const signupBtn = document.getElementById("signupBtn");
+
+// Open modal for Customer (default: Signup tab)
+customerBtn.onclick = () => {
+  customerModal.style.display = "block";
+  showSignup();
 };
 
-// Show signup modal
-signupBtn.onclick = () => {
-  signupModal.style.display = "block";
+// Open modal for Service Provider (default: Login tab)
+providerBtn.onclick = () => {
+  customerModal.style.display = "block";
+  showLogin();
 };
 
-// Close modals when clicking X
+// // Navbar Login
+// loginBtn.onclick = () => {
+//   customerModal.style.display = "block";
+//   showLogin();
+// };
+
+// // Navbar Signup
+// signupBtn.onclick = () => {
+//   customerModal.style.display = "block";
+//   showSignup();
+// };
+
+// Close modal
 closeBtns.forEach(btn => {
   btn.onclick = () => {
-    loginModal.style.display = "none";
-    signupModal.style.display = "none";
+    customerModal.style.display = "none";
   };
 });
 
-// Close when clicking outside modal
+// Close if clicked outside modal
 window.onclick = (event) => {
-  if (event.target === loginModal) {
-    loginModal.style.display = "none";
-  }
-  if (event.target === signupModal) {
-    signupModal.style.display = "none";
+  if (event.target === customerModal) {
+    customerModal.style.display = "none";
   }
 };
+
+// Functions to switch tabs
+function showLogin() {
+  loginTab.classList.add("active");
+  signupTab.classList.remove("active");
+  loginForm.classList.add("active");
+  signupForm.classList.remove("active");
+}
+
+function showSignup() {
+  signupTab.classList.add("active");
+  loginTab.classList.remove("active");
+  signupForm.classList.add("active");
+  loginForm.classList.remove("active");
+}
+
+// Tab switching
+loginTab.onclick = showLogin;
+signupTab.onclick = showSignup;
+
 
 
 
