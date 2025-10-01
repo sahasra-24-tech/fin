@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+     background-color: rgb(255, 255, 194);
+    
+}
+#navbar{
+    height: 70px;
+    width: 100%;
+    background-color: #FFF7D1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    
+}
+#fake{
+    height: 70px;
+    width: 100%;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+#logo{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    margin-left: 5px;
+   
+}
+span{
+    margin-top: 15px;
+    font-size: large;
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: rgb(70, 2, 70);
+    cursor: pointer;
+}
+.contents{
+    display: flex;
+    margin-left: 20px;
+    font-size: large;
+}
+.elements:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.elements{
+    margin-right: 50px;
+    color: rgb(70, 2, 70);
+} 
+#feedback{
+    margin-right: 5px;
+    color: rgb(70, 2, 70);
+}
+#feedback:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.hero{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(255, 255, 194);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.services{
+    height: 250px;
+    width: 350px;
+    
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: space-around;
+    background-color:#FFF7D1;
+    border: 1px solid black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services:hover{
+    transform: translateY(-5px) scale(1);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+p{
+    margin:20px;
+    background: linear-gradient(to right, rgb(247, 1, 152), rgb(141, 2, 141));
+    -webkit-background-clip: text;      /* Clips background to text (for Chrome, Safari, Edge) */
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: italic;
+}
+button{
+    margin: 30px;
+    /* margin-left:20px;
+    margin-bottom: 10px; */
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(247, 1, 152),rgb(141, 2, 141));
+    color : #FFF7D1;
+    border: 1px solid black;
+}
+h3{
+    color: rgb(92, 3, 92);
+}
+
