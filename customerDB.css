@@ -9,13 +9,14 @@ html{
 body{
     height: 100%;
     width: 100%;
-     background-color: rgb(255, 255, 194);
+    background:linear-gradient(45deg,#56f5f5,#6c6ceb,#fd19fd);
     
 }
 #navbar{
     height: 70px;
     width: 100%;
-    background-color: #FFF7D1;
+    background: linear-gradient(45deg, #56c7d9, #6c7deb);
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +46,7 @@ span{
     font-size: xx-large;
     font-style: italic;
     margin-bottom: 10px;
-    color: rgb(70, 2, 70);
+    color: black;
     cursor: pointer;
 }
 .contents{
@@ -59,21 +60,23 @@ span{
 }
 .elements{
     margin-right: 50px;
-    color: rgb(70, 2, 70);
+    color: black;
 } 
 #feedback{
     margin-right: 5px;
-    color: rgb(70, 2, 70);
+    color: black;
 }
 #feedback:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 .hero{
-    height: 600px;
+    height: 800px;
     width: 100%;
-    background-color: rgb(255, 255, 194);
-    display: flex;
+  background: linear-gradient(45deg, #56c7d9, #6c7deb);
+
+
+   display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -89,7 +92,7 @@ span{
     flex-direction: column;
     padding-top: 50px;
     justify-content: space-around;
-    background-color:#FFF7D1;
+    background-color: #F7F9FC;
     border: 1px solid black;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -100,10 +103,7 @@ span{
 }
 p{
     margin:20px;
-    background: linear-gradient(to right, rgb(247, 1, 152), rgb(141, 2, 141));
-    -webkit-background-clip: text;      /* Clips background to text (for Chrome, Safari, Edge) */
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: black;
     font-style: italic;
 }
 button{
@@ -112,11 +112,15 @@ button{
     margin-bottom: 10px; */
     padding: 10px;
     border-radius: 10px;
-    background: linear-gradient(to right, rgb(247, 1, 152),rgb(141, 2, 141));
-    color : #FFF7D1;
+    background: linear-gradient(45deg, #56c7d9, #6c7deb);
+
+    color : black;
     border: 1px solid black;
+    cursor: pointer;
 }
 h3{
-    color: rgb(92, 3, 92);
+    color: black;
 }
-
+a{
+    color: black;
+}

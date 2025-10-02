@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #FFF7D1; /* Black background */
+   background: linear-gradient(45deg, #56c7d9, #6c7deb); 
   color: black; /* White text */
 }
 
@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FFF7D9;
+  background: linear-gradient(45deg, #56c7d9, #6c7deb);
   padding: 15px 30px;
   color: black;
   box-shadow: 0 4px 8px rgba(0,0,0,0.6);
@@ -26,12 +26,13 @@ body {
 .logo img {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .logo span {
   font-size: 1.6em;
   font-weight: normal;
-  color: purple;
+  color: black;
   font-style: italic;
 }
 
@@ -48,7 +49,7 @@ body {
 }
 
 .auth-buttons button:hover {
-  background: #00b4d8;
+  background: #d1e2fc;
   transform: scale(1.05);
 }
 
@@ -56,7 +57,11 @@ body {
 .hero {
   text-align: center;
   padding: 120px 20px;
-  background: #FFF7D1;
+  background: linear-gradient(45deg, #56c7d9, #6c7deb);
+  background-image: url(data:image/jpeg;base64,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);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: BLACK;
 }
 
@@ -66,8 +71,9 @@ body {
 }
 
 .hero h1 span {
-  color: purple;
+  color: black;
   font-style: italic;
+  cursor: pointer;
 }
 
 .hero p {
@@ -94,23 +100,30 @@ body {
 
 /* Customer Button */
 .cta.customer {
-  background: purple;
-  color: #FFF7D1;
+  background: #F7F9FC;
+  color: black;
 }
-
+.cta.admin {
+  background: #F7F9FC;
+  color: black;
+}
+.cta.admin:hover {
+  background: #F7F9FC;
+  transform: scale(1.1);
+}
 .cta.customer:hover {
-  background: rgb(104, 1, 104);
+  background: #F7F9FC;
   transform: scale(1.1);
 }
 
 /* Service Provider Button */
 .cta.provider {
-  background: purple;
-  color: #FFF7D1;
+  background: #F7F9FC;
+  color: black;
 }
 
 .cta.provider:hover {
-  background:  rgb(104, 1, 104);
+  background: #F7F9FC ;
   transform: scale(1.1);
 }
 

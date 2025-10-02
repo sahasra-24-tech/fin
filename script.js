@@ -1,6 +1,7 @@
 // Elements
 const customerBtn = document.getElementById("customerBtn");
 const providerBtn = document.getElementById("providerBtn");
+const adminBtn = document.getElementById("adminBtn");
 const customerModal = document.getElementById("customerModal");
 const closeBtns = document.querySelectorAll(".close");
 
@@ -16,6 +17,10 @@ const signupBtn = document.getElementById("signupBtn");
 
 // Open modal for Customer (default: Signup tab)
 customerBtn.onclick = () => {
+  customerModal.style.display = "block";
+  showSignup();
+};
+adminBtn.onclick = () => {
   customerModal.style.display = "block";
   showSignup();
 };
