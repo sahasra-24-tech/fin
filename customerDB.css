@@ -71,7 +71,7 @@ span{
     cursor: pointer;
 }
 .hero{
-    height: 800px;
+    height: 100%;
     width: 100%;
   background: linear-gradient(45deg, #56c7d9, #6c7deb);
 
